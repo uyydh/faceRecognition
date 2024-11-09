@@ -1,6 +1,6 @@
 # hm2
 ## Prerequisites
-'''
+''' python
 conda create -n yolov5_env python=3.9 -y  
 conda activate yolov5_env  
 '''
