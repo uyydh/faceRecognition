@@ -16,7 +16,9 @@ pip3 install ultralytics
 ```
 2.Dataset: https://pan.baidu.com/s/1T7wbUGKKMZMG5UiOqH2UrQ   psw：vtj3
 
-创建 traffic_vehicle.yaml,其内容如下,：
+包含训练集2390张图片，验证集600张图片，图像分辨率为1024*1024。共21个类别。
+
+创建 traffic_vehicle.yaml,其内容如下：
 ```bash
 path: ../datasets/traffic_vehicle 	# dataset root dir
 train: images/train 				# train images (relative to 'path')
