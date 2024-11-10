@@ -62,6 +62,7 @@ python3 detect.py --source YOU/PATH/images/val/PICNAME.JPG --weights YOU/PATH/we
 ```
 ![image](https://github.com/user-attachments/assets/a259dbba-8a6b-4320-9863-eae2d477b311)
 可根据需要修改参数
+### Result
 ```bash
 python3 val.py --data  YOU/PATH/traffic_vehicle.yaml  --weights YOU/PATH/runs/my_traffic/weights/best.pt --batch-size 128
 ```
