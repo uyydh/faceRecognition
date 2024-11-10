@@ -1,8 +1,8 @@
 # hm2
 ## Introduction
-本项目使用YOLOV5实现自动驾驶目标检测以及目标分类功能。
+This project leverages YOLOv5 for object detection and classification in autonomous driving scenarios.
 ## YOLOV5
-项目使用预训练通用目标检测模型YOLOV5，可通过如下方式安装
+The project utilizes the YOLOv5 pre-trained general object detection model, which can be installed with the following command:
 ```bash
 git clone https://github.com/ultralytics/yolov5.git
 ```
@@ -16,9 +16,9 @@ pip3 install ultralytics
 ```
 2.Dataset: https://pan.baidu.com/s/1T7wbUGKKMZMG5UiOqH2UrQ   psw：vtj3
 
-包含训练集2390张图片，验证集600张图片，图像分辨率为1024*1024。共21个类别。
+It includes 2390 training images and 600 validation images, each with a resolution of 1024x1024, spanning 21 classes.
 
-创建 traffic_vehicle.yaml,其内容如下：
+Create traffic_vehicle.yaml with the following content:
 ```bash
 path: ../datasets/traffic_vehicle 	# dataset root dir
 train: images/train 				# train images (relative to 'path')
@@ -56,12 +56,12 @@ names:
 python3 ./train.py --data YOU/PATH/traffic_vehicle.yaml --cfg YOU/PATH/yolov5s_traffic_vehicle.yaml --weights YOU/PATH/yolov5s.pt --batch-size 1128 --epochs 300 --name YOU NAME --project yolo_traffic_vehicle
 ```
 ### Testing
-修改下面地址，以及图片名，选择其中一张图片，查看效果。
+To test, modify the image path and file name to select a specific image and view the detection results:
 ```bash
 python3 detect.py --source YOU/PATH/images/val/PICNAME.JPG --weights YOU/PATH/weights/best.pt --conf-thres 0.4
 ```
 ![image](https://github.com/user-attachments/assets/a259dbba-8a6b-4320-9863-eae2d477b311)
-可根据需要修改参数
+Run the following to evaluate the model's performance:
 ### Result
 ```bash
 python3 val.py --data  YOU/PATH/traffic_vehicle.yaml  --weights YOU/PATH/runs/my_traffic/weights/best.pt --batch-size 128
@@ -94,5 +94,5 @@ val: Scanning /tmp/pycharm_project_841/datasets/labels/val.cache... 600 images,
            wheelbarrow        600         23      0.506      0.217      0.231      0.178
 Speed: 0.1ms pre-process, 1.5ms inference, 8.3ms NMS per image at shape (128, 3, 640, 640)
 ```
-训练好的模型如下：
-链接: https://pan.baidu.com/s/1BAI9TSePg7VON-1O2mpfIQ 提取码: xm2r
+## Pretrained Model
+https://pan.baidu.com/s/1BAI9TSePg7VON-1O2mpfIQ pwd: xm2r
