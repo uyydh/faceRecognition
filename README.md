@@ -53,7 +53,7 @@ names:
 ## Getting Start
 ### Training
 ```bash
-python3 ./train.py --data YOU/PATH/traffic_vehicle.yaml --cfg YOU/PATH/yolov5s_traffic_vehicle.yaml --weights YOU/PATH/yolov5s.pt --batch-size 32 --epochs 50 --name YOU NAME --project yolo_traffic_vehicle
+python3 ./train.py --data YOU/PATH/traffic_vehicle.yaml --cfg YOU/PATH/yolov5s_traffic_vehicle.yaml --weights YOU/PATH/yolov5s.pt --batch-size 1128 --epochs 300 --name YOU NAME --project yolo_traffic_vehicle
 ```
 ### Testing
 修改下面地址，以及图片名，选择其中一张图片，查看效果。
@@ -61,9 +61,9 @@ python3 ./train.py --data YOU/PATH/traffic_vehicle.yaml --cfg YOU/PATH/yolov5s_t
 python3 detect.py --source YOU/PATH/images/val/PICNAME.JPG --weights YOU/PATH/weights/best.pt --conf-thres 0.4
 ```
 ![image](https://github.com/user-attachments/assets/a259dbba-8a6b-4320-9863-eae2d477b311)
-
+可根据需要修改参数
 ```bash
-python3 val.py --data  ./data/traffic_vehicle.yaml  --weights ./yolo_traffic_vehicle/epochs300_1/weights/best.pt --batch-size 32
+python3 val.py --data  YOU/PATH/traffic_vehicle.yaml  --weights YOU/PATH/runs/my_traffic/weights/best.pt --batch-size 128
 ```
 ```
 YOLOv5s summary: 157 layers, 7066762 parameters, 0 gradients, 15.9 GFLOPs
