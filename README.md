@@ -1,5 +1,9 @@
 # hm2
-## 
+## YOLOV5
+项目使用预训练通用目标检测模型YOLOV5，可通过如下方式安装
+```bash
+git clone https://github.com/ultralytics/yolov5.git
+```
 
 ## Prerequisites
 ####
@@ -50,4 +54,8 @@ python3 ./train.py --data YOU/PATH/traffic_vehicle.yaml --cfg YOU/PATH/yolov5s_t
 ### Testing
 ```bash
 python3 detect.py --source YOU/PATH/images/val/PICNAME.JPG --weights YOU/PATH/weights/best.pt --conf-thres 0.4
+```
+
+```bash
+python3 val.py --data  ./data/traffic_vehicle.yaml  --weights ./yolo_traffic_vehicle/epochs300_1/weights/best.pt --batch-size 32
 ```
