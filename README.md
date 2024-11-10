@@ -94,3 +94,5 @@ val: Scanning /tmp/pycharm_project_841/datasets/labels/val.cache... 600 images,
            wheelbarrow        600         23      0.506      0.217      0.231      0.178
 Speed: 0.1ms pre-process, 1.5ms inference, 8.3ms NMS per image at shape (128, 3, 640, 640)
 ```
+训练好的模型如下：
+链接: https://pan.baidu.com/s/1BAI9TSePg7VON-1O2mpfIQ 提取码: xm2r
