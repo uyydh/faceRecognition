@@ -1,4 +1,6 @@
 # hm2
+## Introduction
+本项目使用YOLOV5实现自动驾驶目标检测以及目标分类功能。
 ## YOLOV5
 项目使用预训练通用目标检测模型YOLOV5，可通过如下方式安装
 ```bash
