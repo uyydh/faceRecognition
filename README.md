@@ -9,6 +9,7 @@ pip3 install -r requirements.txt
 pip3 install ultralytics
 ```
 2.Dataset: https://pan.baidu.com/s/1T7wbUGKKMZMG5UiOqH2UrQ   psw：vtj3
+
 创建 traffic_vehicle.yaml,其内容如下,：
 ```bash
 path: ../datasets/traffic_vehicle 	# dataset root dir
