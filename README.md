@@ -55,6 +55,7 @@ python3 ./train.py --data YOU/PATH/traffic_vehicle.yaml --cfg YOU/PATH/yolov5s_t
 ```bash
 python3 detect.py --source YOU/PATH/images/val/PICNAME.JPG --weights YOU/PATH/weights/best.pt --conf-thres 0.4
 ```
+![image](https://github.com/user-attachments/assets/a259dbba-8a6b-4320-9863-eae2d477b311)
 
 ```bash
 python3 val.py --data  ./data/traffic_vehicle.yaml  --weights ./yolo_traffic_vehicle/epochs300_1/weights/best.pt --batch-size 32
